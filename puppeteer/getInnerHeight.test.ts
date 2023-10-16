@@ -11,8 +11,6 @@ import {
 	test as it
 } from '@jest/globals';
 import {launch} from 'puppeteer';
-// import {first} from '../src/first';
-// import {getInnerHeight} from '../src/getInnerHeight';
 
 let browser: Browser;
 let page: Page;
