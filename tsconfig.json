@@ -12,7 +12,7 @@
 		// "noEmitHelpers": true, // puppeteer needs this for setTimeout?
 		// "noEmitHelpers": false, // __awaiter is not defined
 		// "target": "ES2015", // __awaiter is not defined
-		"target": "ES2020", // This fixes __awaiter is not defined
+		"target": "ES2017", // This fixes __awaiter is not defined
 		"types": [
 		]
 	},
