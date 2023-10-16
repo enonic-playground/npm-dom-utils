@@ -1,3 +1,4 @@
 /.enonic
+/build/
 /dist/
 /node_modules/
