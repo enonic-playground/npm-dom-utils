@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"esModuleInterop": true, // jest want's this
 		"lib": [
 			"DOM",
 			"ES5",

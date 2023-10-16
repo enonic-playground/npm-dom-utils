@@ -3,6 +3,13 @@ export default {
 		'src/**/*.{ts,tsx}',
 		'!src/**/*.d.ts',
 	],
+	// globals: {
+	// 	'ts-jest': {
+	// 		tsConfig: {
+	// 			esModuleInterop: true
+	// 		},
+	// 	}
+	// },
 	testEnvironment: 'jsdom',
 	transform: {
 		'^.+\\.(js|jsx|ts|tsx)$': [
@@ -14,4 +21,5 @@ export default {
 			}
 		]
 	},
+	// tsConfig: './jest/tsconfig.json',
 }

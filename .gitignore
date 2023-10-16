@@ -1,5 +1,6 @@
 /.enonic
 /build/
-/coverage/
+/jest/coverage/
+/puppeteer/coverage/
 /dist/
 /node_modules/

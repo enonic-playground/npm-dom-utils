@@ -29,6 +29,8 @@ const server = Bun.serve({
 		} from './index.js';
 		globalThis.animateScrollTop = animateScrollTop;
 		globalThis.first = first;
+		globalThis.getInnerHeight = getInnerHeight;
+		globalThis.isVisible = isVisible;
 
 		const el = first('#myId');
 		const el2 = first('#myId2');
@@ -91,7 +93,10 @@ const server = Bun.serve({
 		>position: relative</div>
 	</div>
 
-
+	<div id="block" style="display:block">display:block</div>
+	<div id="none" style="display:none">display:none</div>
+	<div id="hidden" style="visibility:hidden">visibility:hidden</div>
+	<div id="opacity" style="opacity: 0">opacity: 0</div>
 </body>
 </html>`, {
 			headers: {
