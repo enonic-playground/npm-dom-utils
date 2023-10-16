@@ -30,11 +30,18 @@ const server = Bun.serve({
 		globalThis.animateScrollTop = animateScrollTop;
 		globalThis.first = first;
 		globalThis.getInnerHeight = getInnerHeight;
+		globalThis.getOffset = getOffset;
+		globalThis.getOffsetParent = getOffsetParent;
 		globalThis.isVisible = isVisible;
+		globalThis.getOuterHeightWithMargin = getOuterHeightWithMargin;
+		globalThis.getOuterWidthWithMargin = getOuterWidthWithMargin;
+		globalThis.getPosition = getPosition;
+		globalThis.setInnerHeight = setInnerHeight;
+		globalThis.setOffset = setOffset;
 
 		const el = first('#myId');
 		const el2 = first('#myId2');
-		const el3 = first('#myId3');
+		const el3 = first('#child');
 
 		console.debug('elementExists', elementExists(el));
 		console.debug('elementExists', elementExists(first('#nonExistingId')));
@@ -85,10 +92,10 @@ const server = Bun.serve({
 	style="display: none"
 >display: none</div>
 
-	<div style="border:1px solid red; height: 500px; position: absolute; width: 500px;">
+	<div id="parent" style="border:1px solid red; height: 500px; position: absolute; width: 500px;">
 		position: absolute
 		<div
-			id="myId3"
+			id="child"
 			style="border:1px solid blue; height: 100%; position: relative; width: 100%;"
 		>position: relative</div>
 	</div>
