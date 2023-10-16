@@ -1,12 +1,18 @@
 {
 	"compilerOptions": {
 		"esModuleInterop": true, // jest want's this
+		// "importHelpers": true, // tslib_1 is not defined
 		"lib": [
 			"DOM",
 			"ES5",
 			"ES2015", // Needed for Array.from()
 			"ES2016.Array.Include"
+			// "ES2020"
 		],
+		// "noEmitHelpers": true, // puppeteer needs this for setTimeout?
+		// "noEmitHelpers": false, // __awaiter is not defined
+		// "target": "ES2015", // __awaiter is not defined
+		"target": "ES2020", // This fixes __awaiter is not defined
 		"types": [
 		]
 	},

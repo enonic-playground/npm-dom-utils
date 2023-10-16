@@ -11,6 +11,9 @@
     "glob": "^10",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "jest-puppeteer": "^9.0.1",
+    "puppeteer": "^21.3.8",
+    "tslib": "^2.6.2",
     "ts-jest": "^29",
     "ts-node": "^10",
     "tsup": "^7",
@@ -59,9 +62,5 @@
     "test:puppeteer": "jest --config ./puppeteer/jest.config.ts --no-cache --coverage"
   },
   "type": "module",
-  "types": "index.d.ts",
-  "dependencies": {
-    "jest-puppeteer": "^9.0.1",
-    "puppeteer": "^21.3.8"
-  }
+  "types": "index.d.ts"
 }
