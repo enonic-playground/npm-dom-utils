@@ -4,6 +4,9 @@
 			"DOM",
 			"ES5",
 			"ES2015", // Needed for Array.from()
+			"ES2016.Array.Include"
+		],
+		"types": [
 		]
 	},
 	"exclude": [
